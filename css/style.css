@@ -1,0 +1,312 @@
+html,
+body {
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+	opacity: 1;
+	background-color: rgb(237, 241, 245);
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 1200px;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(237, 241, 245);
+}
+
+.header {
+	margin: 25px 0 0 0;
+}
+
+.header__container {
+	margin: 0 auto;
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 6px;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid rgba(107, 102, 102, 0.337);
+}
+
+.menu__list li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu__list li a {
+	display: block;
+	color: #4F4C67;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+
+.menu {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu__item {
+	margin: 0px 40px 0px 0px;
+}
+
+.header__number {
+	flex: 0 0 350px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.number {
+	color: rgb(237, 241, 245);
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2.23px;
+	background-color: #4F4C67;
+	padding: 15px 30px;
+	border-radius: 12px;
+	transition: all 0.4s ease 0s;
+}
+
+.number__seven {
+	letter-spacing: 12px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.number:hover {
+	background-color: #595577;
+	color: rgb(255, 255, 255);
+}
+
+.main {
+	margin: 60px auto 0px;
+	max-width: 80%;
+	width: 80%;
+	min-height: 476px;
+}
+
+.text__paragraph {
+	width: 70%;
+}
+
+.text2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__container {
+	height: 100%;
+	border: 6px solid #4F4C67;
+	background-color: rgba(150, 150, 117, 0.407);
+}
+
+
+/* .vertical {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	color: #4F4C67;
+	font-size: 20px;
+	font-weight: 1000;
+	text-align: center;
+	margin: 0 60px 0 0;
+	padding: 0 0 0 50px;
+	text-transform: uppercase;
+} */
+
+.header__icon {
+	margin: 0 0 -25px 0;
+}
+
+.text__head {
+	margin: 0 0 0 22px;
+	width: 40%;
+}
+
+.map {
+	display: flex;
+	border-left: 4px dashed #4F4C67;
+	width: 50%;
+}
+
+.text__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container__item {
+	/* list-style-type: disc; */
+	margin: 0 0 13px 0;
+}
+
+.container__list {
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+
+.flex__list {}
+
+.main__h {
+	margin: 20px 0 0 22px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.container__item::before {
+	color: red;
+	content: "▪";
+	padding-right: 12px;
+}
+
+.main__paragraph {
+	margin: 25px 0 28px 40px;
+	width: 70%;
+	text-align: justify;
+	font-size: 20px;
+	letter-spacing: 0.4px;
+	border-bottom: 1px solid rgba(107, 102, 102, 0.337);
+	padding: 0 0 13px 0;
+}
+
+@media (max-width:1200px) {
+	.wrapper {
+		max-width: 970px;
+	}
+
+	.menu__list li a {
+		display: block;
+		color: #4F4C67;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.menu__item {
+		margin: 0px 20px 0px 0px;
+	}
+
+	.header__number {
+		flex: 0 0 250px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.number {
+		color: rgb(237, 241, 245);
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		background-color: #4F4C67;
+		padding: 15px 30px;
+		border-radius: 12px;
+		transition: all 0.4s ease 0s;
+	}
+
+	.number__seven {
+		letter-spacing: 6px;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+}
+
+@media (max-width:992px) {
+	.wrapper {
+		max-width: 750px;
+	}
+
+	.header__icon {
+		display: none;
+	}
+
+	.menu {
+		flex: 1 1 auto;
+		display: flex;
+	}
+
+	.main__paragraph {
+		margin: 10px 0 12px 20px;
+		width: 90%;
+		text-align: justify;
+		font-size: 16px;
+		letter-spacing: 0.2px;
+		border-bottom: 1px solid rgba(107, 102, 102, 0.337);
+		padding: 0 0 7px 0;
+	}
+
+	.main__h {
+		margin: 10px 0 0 12px;
+		font-size: 17px;
+		font-weight: 800;
+	}
+}
+
+@media (max-width:767px) {
+	.wrapper {
+		max-width: none;
+	}
+
+	.number {
+		display: none;
+	}
+
+	.menu__list li a {}
+
+	.header__container {
+		max-width: 100%;
+		display: block;
+		margin: auto;
+		padding: 0;
+	}
+
+	.header {
+		margin: 12px 0 0 0;
+	}
+
+	.menu {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container__item::before {
+		color: red;
+		content: "▪";
+		padding-right: 6px;
+	}
+
+	.container__item {
+		margin: 0 0 5px 0;
+	}
+
+	ul {
+		padding-inline-start: 15px;
+	}
+
+	.map {
+		display: none;
+	}
+
+	.text__head {
+		margin: 0 0 0 22px;
+		width: 100%;
+	}
+}
